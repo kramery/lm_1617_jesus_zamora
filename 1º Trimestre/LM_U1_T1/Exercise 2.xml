@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<autobus>
+    
+    <ruta>
+        
+        <parada>
+            <calle>san jacinto</calle>
+            <hora>10:45</hora>
+            <informacion>rojo</informacion>
+        </parada>
+        
+        <parada>
+            <calle>linde</calle>
+            <hora>10:50</hora>
+            <informacion>marron</informacion>
+        </parada>
+        
+        <parada>
+            <calle>sevilla</calle>
+            <hora>11:00</hora>
+            <informacion>morado</informacion>
+        </parada>
+        
+        <parada>
+            <calle>salud</calle>
+            <hora>11:05</hora>
+            <informacion>azul</informacion>
+        </parada>
+        
+        <parada>
+            <calle>redes</calle>
+            <hora>11:30</hora>
+            <informacion>lila</informacion>
+        </parada>
+        
+        <parada>
+            <calle>Sandro</calle>
+            <hora>11:35</hora>
+            <informacion>amarillo</informacion>
+        </parada>
+        
+        <parada>
+            <calle>Neptuno</calle>
+            <hora>11:45</hora>
+            <informacion>azul</informacion>
+        </parada>
+        
+        <parada>
+            <calle>Sierpes</calle>
+            <hora>11:55</hora>
+            <informacion>rojo</informacion>
+        </parada>
+        
+        <parada>
+            <calle>Sol</calle>
+            <hora>11:59</hora>
+            <informacion>rosa</informacion>
+        </parada>
+        
+        <parada>
+            <calle>Cuna</calle>
+            <hora>12:00</hora>
+            <informacion>fluorescente</informacion>
+        </parada>
+
+    </ruta>
+    
+</autobus>

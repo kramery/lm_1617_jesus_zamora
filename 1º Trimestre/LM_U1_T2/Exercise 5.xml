@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE partido [
+<!ELEMENT partido (equipo1,equipo2)>
+<!ELEMENT equipo1 (goles,penaltis?,juega-en-casa?,minutogol,tarjeta)>
+<!ELEMENT equipo2 (goles,penaltis?,juega-en-casa?,minutogol,tarjeta)>
+<!ELEMENT goles (#PCDATA)>
+<!ELEMENT penaltis (#PCDATA)>
+<!ELEMENT juega-en-casa (#PCDATA)>
+<!ELEMENT minutogol (#PCDATA)>
+<!ELEMENT tarjeta (roja?,amarilla?)>
+<!ELEMENT roja (#PCDATA)>
+<!ELEMENT amarilla (#PCDATA)>
+]>
+
+<partido>
+    <equipo1>
+        <goles>2</goles>
+        <juega-en-casa>si</juega-en-casa>
+        <minutogol>48</minutogol>
+        <tarjeta>
+            <roja>2</roja>
+        </tarjeta>
+    </equipo1>
+    <equipo2>
+        <goles>288</goles>
+        <minutogol>50</minutogol>
+        <tarjeta>
+            <amarilla>2</amarilla>
+        </tarjeta>
+    </equipo2>
+</partido>

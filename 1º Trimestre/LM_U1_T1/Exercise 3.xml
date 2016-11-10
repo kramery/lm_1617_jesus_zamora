@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libro>
+    
+    <receta>
+        <ingredientes>ajo, cebolla, sal</ingredientes>
+        <pasos>En primer lugar, cortamos la cebolla, en segungo lugar...</pasos>
+    </receta>
+    
+    <receta>
+        <ingredientes>atun, masa quebrada, tomate frito</ingredientes>
+        <pasos>En primer lugar, descongelamos la masa quebrada y mezclamos atun con tomate, en segungo lugar...</pasos>
+    </receta>
+    
+</libro>

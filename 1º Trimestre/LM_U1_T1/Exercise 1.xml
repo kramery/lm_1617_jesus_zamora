@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso>
+    <alumno>
+        <nombre>Juan</nombre>
+        <apellidos>Cantero</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+        
+    </alumno>
+    
+    <alumno>
+        <nombre>Rosa</nombre>
+        <apellidos>Vazquez</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Daniel</nombre>
+        <apellidos>Paz</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Enrique</nombre>
+        <apellidos>Coza</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Mercedes</nombre>
+        <apellidos>Rodriguez</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Sofia</nombre>
+        <apellidos>mateo</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Juan</nombre>
+        <apellidos>lopez</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Sara</nombre>
+        <apellidos>gerardo</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Diego</nombre>
+        <apellidos>Zamora</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+    <alumno>
+        <nombre>Jose</nombre>
+        <apellidos>Palacios</apellidos>
+        <geografia>9</geografia>
+        <filosofia>8</filosofia>
+    </alumno>
+    
+</curso>
+

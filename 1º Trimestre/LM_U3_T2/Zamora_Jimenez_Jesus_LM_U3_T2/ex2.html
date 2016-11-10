@@ -8,14 +8,13 @@
     <body>
 
     <table style="border: 1px solid #0000FF;">
+        <form>
         <tr style="background-color:#3FFFFF;">
             <td><h3>Even Planner</h3></td>
             <td colspan="4">
-                <form>
                     <select>
                     <option value="More Actions">More Actions</option>
                     </select>    
-                </form>
             </td>
         </tr>
         <tr>
@@ -34,7 +33,7 @@
         </tr>
         <tr>
             <td><strong>Email</strong></td>
-            <td><input type="text" size="20"></td>
+            <td><input type="email" size="20"></td>
             <td><strong>Event Start Date</strong></td>
             <td>
             <td><input type="text" size="10">
@@ -44,11 +43,9 @@
         <tr>
             <td><strong>Event Type</strong></td>
             <td>
-                <form>
-                    <option>
-                        <select>Concert</select>
-                    </option>
-                </form>
+                <select>
+                    <option>Concert</option>
+                </select>
             </td>
             <td><strong>End Event Time</strong></td>
             <td></td>
@@ -57,13 +54,11 @@
             </td>
         </tr>
         <tr>
-            <td><strong>Totam Members</strong></td>
+            <td><strong>Tota Members</strong></td>
             <td>
-                <form>
-                    <option>
-                        <select>-Select-</select>
-                    </option>
-                </form>
+                <select>
+                    <option>-Select-</option>
+                </select>
             </td>
             <td><strong>Location</strong></td>
             <td></td>
@@ -77,47 +72,36 @@
             <td><strong>City</strong></td>
             <td></td>
             <td>
-                <form>
                     <input type="text" size="29">
-                </form>
             </td>
         </tr>
         <tr>
             <td><strong>Does you program<br/> involve any tupe of<br/> outside activity?</strong></td>
             <td>
-                <form>
-                    <input type="radio" value="1">
+                    <input type="radio" name="formulario" value="1">
                     <label for="1">Yes </label><br/>
-                    <input type="radio" value="2">
+                    <input type="radio" value="2" name="formulario">
                     <label for="2">No </label>
-                    
-                </form>
             </td>
             <td><strong>State</strong></td>
             <td></td>
             <td>
-                <form>
                     <select>
                         <option>-Select-</option>
                     </select>
-                </form>
             </td>
         </tr>
         <tr>
             <td><strong>Cost Per Person</strong></td>
             <td>
-                <form>
                     <input type="text" size="10"> USD                
-                </form>
             </td>
             <td><strong>Country</strong></td>
             <td></td>
             <td>
-                <form>
                     <select>
                         <option>-Select-</option>
                     </select>
-                </form>
             </td>
         </tr>
         <tr>
@@ -133,18 +117,17 @@
         <tr>
             <td></td>
             <td style="text-align:right;">
-                <form>
                     <input style="background-color: #54D3C8;color:white;" type="submit" value="Submit">
-                </form>
             </td>
             <td>
-                <form>
+                
                     <input style="background-color: #54D3C8;color:white;" type="reset" value="Reset">
-                </form>
+                
             </td>
             <td></td>
             <td></td>
         </tr>
+        </form>
     </table>
     
     

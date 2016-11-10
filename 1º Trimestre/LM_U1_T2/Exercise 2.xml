@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE lettera [
+<!ELEMENT lettera (#PCDATA|cliente|ordine|responsabile)*>
+<!ELEMENT cliente (#PCDATA)>
+<!ELEMENT ordine (articolo+)>
+<!ATTLIST ordine num CDATA #REQUIRED>
+<!ELEMENT articolo (codice,descr)>
+<!ELEMENT codice (#PCDATA)>
+<!ELEMENT descr (#PCDATA)>
+<!ELEMENT responsabile (#PCDATA|tit)*>
+<!ELEMENT tit (#PCDATA)>
+]>
+
+
+<lettera>
+    Gentile<cliente>tal dei tali</cliente>,
+    la informiamo che i seguenti articoli da lei ordinati non sono più dosponibili a magazzino:
+        <ordine num="1234">
+            <articolo>
+                <codice>1</codice>
+                <descr>articolo 1</descr>
+            </articolo>
+            <articolo>
+                <codice>2</codice>
+                <descr>articolo 5</descr>
+            </articolo>
+        </ordine>
+        Cordiali saluti,
+        <responsabile><tit>dr.</tit>Mario Rossi</responsabile>
+</lettera>

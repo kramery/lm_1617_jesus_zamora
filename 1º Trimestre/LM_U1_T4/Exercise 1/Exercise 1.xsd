@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="table">
+     <xs:complexType>
+         <xs:sequence>
+             <xs:element ref="usuario" minOccurs="1" maxOccurs="unbounded"/>
+         </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+    <xs:element name="usuario">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="membername" />
+            <xs:element ref="yearsofmembership"/>
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="membername" type="xs:string"/>
+    <xs:element name="yearsofmembership" type="xs:string"/>
+</xs:schema>
