@@ -1,0 +1,29 @@
+﻿/* This is a comment */
+/* Style Sheet for Jaberwocky Tutorial */
+
+/* Body */
+body {background-color: tan}        /* Cambia al color tan el body del documento */    
+
+/* Headers */
+h1 {color:maroon; font-size:20pt}       /* Cambia el color de h1 y le da tamaño de 20pt a la fuente */
+
+/* HR (Hard Rule = line) */
+hr {color:navy}                     /* Crea una linea separatoria de color navy */
+
+/* Paragraphs */
+p {font-size:12pt; margin-left: 15px}          /* Establece a 12pt la fuente de los párrafos y le da un margen de izquierda de 15px */
+p.verse {color:maroon; margin-left: 60px}       /* Cambia el color y le da margen de 60px al parrafo verse */
+
+/* Divs */
+
+/* Links */
+a:link     {color:green}        /* Los links de a dentran un color green */
+a:visited  {color:yellow}       /* El color de los links de a visitados serán de color yellow */
+a:hover    {color:black}        /* Crea un efecto hover al pasar el raton por encima en los enlaces a de color black */        
+a:active   {color:blue}         /* El color activo de a será de color blue */
+
+/* Navigation */
+
+/* Classes used by all html elements */
+
+/* Ids */
