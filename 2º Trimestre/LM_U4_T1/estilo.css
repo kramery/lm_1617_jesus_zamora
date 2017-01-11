@@ -1,0 +1,14 @@
+.estilo {
+    background-color: black;
+    color: white;
+}
+
+.impar {
+    background-color: grey;
+    color: white;
+}
+
+.par {
+    background-color: grey;
+    color: black;
+}

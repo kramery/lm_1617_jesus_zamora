@@ -1,0 +1,139 @@
+<!--
+    Author: Juan Diego Pérez @pekechis
+    E-mail: contact@jdperez.es
+    Description: Template for jQuery Exercises
+    Date: December 2016
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	
+	<h1 id="h1">Esto es un h1</h1><br/>
+    <table border="1" style="text-align:center">
+            <tr>
+                <th>HORA</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+            <tr>
+                <td>8:15-9:15</td>
+                <td>GBD</td>
+                <td>LMS</td>
+                <td>ISINF</td>
+                <td>LMS</td>
+                <td>ISINF</td>
+            </tr>
+            <tr>
+                <td>9:15-10:15</td>
+                <td>GBD</td>
+                <td>LMS</td>
+                <td>ISINF</td>
+                <td>LMS</td>
+                <td>ISINF</td>
+            </tr>
+            <tr>
+                <td>10:15-11:15</td>
+                <td>GBD</td>
+                <td>FOL</td>
+                <td>ISINF</td>
+                <td>FOL</td>
+                <td>ISINF</td>
+            </tr>
+            <tr>
+                <td>11:15-11:45</td>
+                <th colspan="5">RECREO</th>
+            </tr>
+            <tr>
+                <td>11:45-12:45</td>
+                <td>PLDR</td>
+                <td>ISINF</td>
+                <td>GBD</td>
+                <td>PLDR</td>
+                <td>FHAW</td>
+            </tr>
+            <tr>
+                <td>12:45-13:45</td>
+                <td>PLDR</td>
+                <td>ISINF</td>
+                <td>GBD</td>
+                <td>PLDR</td>
+                <td>FHAW</td>
+            </tr>
+            <tr>
+                <td>13:45-14:45</td>
+                <td>PLDR</td>
+                <td>ISINF</td>
+                <td>GBD</td>
+                <td>PLDR</td>
+                <td>FOL</td>
+            </tr>
+    </table><br/>
+    
+    <table border="1" style="text-align:center" id="tabla">
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+        <tr>
+            <td>alumno</td>
+        </tr>
+    </table><br/>
+    
+    <p id="parrafo1">Esto es un párrafo</p>
+    <p id="parrafo2">Esto es un párrafo</p>
+    <p id="parrafo3">Esto es un párrafo</p>
+    <p id="parrafo4">Esto es un párrafo</p>
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+
+          $( "#h1" ).addClass( "estilo" );
+          $( "tr:first" ).css( "background-color","red").css("color","white");
+          $( "#tabla tr:odd" ).addClass( "impar" );
+          $( "#tabla tr:even" ).addClass( "par" );
+          $( "#parrafo3" ).show();
+          $( "#parrafo1" ).hide();
+          $( "#parrafo2" ).hide();
+          $( "#parrafo4" ).hide();
+
+	  });
+	</script>
+
+</body>
+</html>
