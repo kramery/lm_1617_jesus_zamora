@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-1.11.3.js"></script>
+      <link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+  </head>
+  <body>
+
+      <div id="contenedor">
+            <p align="center">Esto es una barra lateral hecho con JQuery</p>
+            <div id="capa1"><img src="nina.gif"> 
+                <ol>
+                    <li>hola</li>
+                    <li>hola</li>
+                        <ul>
+                            <li>hola</li>
+                            <li>hola</li>
+                            <li>hola</li>
+                        </ul>
+                    <li>hola</li>
+                        <ul>
+                            <li>hola</li>
+                            <li>hola</li>
+                            <li>hola</li>
+                        </ul>
+                    <li>hola</li>
+                    <li>hola</li>            
+                </ol>
+          </div>
+          <div id="capa2"><img id="arrow1" src="flecha2.png"></div>          
+       </div>
+       <div id="capa3"><img id="arrow2" src="flecha.png"></div>
+      
+      
+      <script type="text/javascript">
+       
+        $(function() {
+            console.log("Ready for jQuery");
+            $("#arrow2").hide();
+            $("#contenedor").addClass("contenedor");
+            $("#capa1").addClass("capa1");
+            $("#capa2").addClass("capa2");
+            $("#capa3").addClass("capa2");
+            $("#arrow1").click(function() {
+                $("#contenedor").animate({
+					width:"toggle"
+				},1000,function() {
+                    $("#arrow2").show();
+                });                                
+            });
+            
+            $("#arrow2").click(function() {
+                $("#contenedor").animate({
+                   width:"toggle"
+                    },1000,function() {
+                    $("#arrow1").show();
+                     $("#arrow2").hide();
+                });
+                
+            });
+        });
+      </script>
+  </body>
+</html>

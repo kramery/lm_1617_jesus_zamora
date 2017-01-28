@@ -1,0 +1,25 @@
+.contenedor {
+    border: 1px solid black;
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.imagen {
+    position: absolute;
+    border: 1px solid red;
+    width: 312px;
+    height: 300px;
+
+}
+
+
+.superpuesta {
+    position: absolute;
+    border: 1px solid blue;
+    width: 300px;
+    height: 150px;
+    margin-left: 100px;
+    margin-top: 100px;
+
+}

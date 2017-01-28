@@ -1,4 +1,4 @@
-<!--
+    <!--
     Author: Juan Diego Pérez @pekechis
     E-mail: contact@jdperez.es
     Description: Template for jQuery Exercises
@@ -114,9 +114,9 @@
         </tr>
     </table><br/>
     
-    <p id="parrafo1">Esto es un párrafo</p>
+    <p id="parrafo1" >Esto es un párrafo</p>
     <p id="parrafo2">Esto es un párrafo</p>
-    <p id="parrafo3">Esto es un párrafo</p>
+    <p id="parrafo3" class="show">Esto es el párrafo 3</p>
     <p id="parrafo4">Esto es un párrafo</p>
 
 	<script>
@@ -127,11 +127,8 @@
           $( "tr:first" ).css( "background-color","red").css("color","white");
           $( "#tabla tr:odd" ).addClass( "impar" );
           $( "#tabla tr:even" ).addClass( "par" );
-          $( "#parrafo3" ).show();
-          $( "#parrafo1" ).hide();
-          $( "#parrafo2" ).hide();
-          $( "#parrafo4" ).hide();
-
+          $( "p" ).hide()
+          $( "p.show" ).show();
 	  });
 	</script>
 
