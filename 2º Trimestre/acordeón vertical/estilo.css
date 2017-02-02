@@ -1,0 +1,55 @@
+.contenedor {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+}
+
+.capa1 {
+     width: 500px;
+    overflow-y: auto;
+    
+}
+
+.derecha {
+    text-align:center; 
+    background-color: #89CBF8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.izquierda {
+     width: 500px;
+     height: 126px;
+    
+}
+
+.izquierda1 {
+    float:left;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.izquierda2 {
+    
+    
+}
+
+.izquierda3 {
+    float:left;
+    width: 370px;
+    height: 120px;
+    padding-left: 5px;
+    
+}
+
+
+#redondeado_arriba {
+     border-top-right-radius: 20px;
+     border-top-left-radius: 20px;
+}
+
+#redondeado_abajo {
+     border-bottom-right-radius: 20px;
+     border-bottom-left-radius: 20px;
+}

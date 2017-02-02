@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	
+	<div class="contenedor">
+        
+        <div class="capa1" id="redondeado_arriba">
+            <div class="derecha">
+                <img src="img/boton.png"><span> Pulsa aqui</span>
+            </div>
+            
+            <div class="izquierda">
+                <div class="izquierda1"><img src="img/bowie.png"/></div>
+                <div class="izquierda2">rfdf</div>
+                <div class="izquierda3">Lorem fistrum aute quis qué dise usteer irure te va a hasé pupitaa apetecan cillum por la gloria de mi madre. Ad ad commodo jarl caballo blanco caballo negroorl al ataquerl. Te va a hasé pupitaa quietooor te voy a borrar el cerito amatomaa torpedo condemor.</div>
+            </div>
+        </div>
+        
+        <div class="capa1">
+            <div class="derecha">
+                <img src="img/boton.png"><span> Pulsa aqui</span>
+            </div>
+            
+            <div class="izquierda">
+                <div class="izquierda1"><img src="img/bowie.png"/></div>
+                <div class="izquierda2">rfdf</div>
+                <div class="izquierda3">Lorem fistrum aute quis qué dise usteer irure te va a hasé pupitaa apetecan cillum por la gloria de mi madre. Ad ad commodo jarl caballo blanco caballo negroorl al ataquerl. Te va a hasé pupitaa quietooor te voy a borrar el cerito amatomaa torpedo condemor.</div>
+            </div>
+        </div>
+        
+        <div class="capa1">
+            <div class="derecha">
+                <img src="img/boton.png"><span> Pulsa aqui</span>
+            </div>
+            
+            <div class="izquierda">
+                <div class="izquierda1"><img src="img/bowie.png"/></div>
+                <div class="izquierda2">rfdf</div>
+                <div class="izquierda3">Lorem fistrum aute quis qué dise usteer irure te va a hasé pupitaa apetecan cillum por la gloria de mi madre. Ad ad commodo jarl caballo blanco caballo negroorl al ataquerl. Te va a hasé pupitaa quietooor te voy a borrar el cerito amatomaa torpedo condemor.</div>
+            </div>
+        </div>
+        
+        <div class="capa1" id="redondeado_abajo">
+            <div class="derecha">
+                <img src="img/boton.png"><span> Pulsa aqui</span>
+            </div>
+            
+            <div class="izquierda">
+                <div class="izquierda1"><img src="img/bowie.png"/></div>
+                <div class="izquierda2">rfdf</div>
+                <div class="izquierda3">Lorem fistrum aute quis qué dise usteer irure te va a hasé pupitaa apetecan cillum por la gloria de mi madre. Ad ad commodo jarl caballo blanco caballo negroorl al ataquerl. Te va a hasé pupitaa quietooor te voy a borrar el cerito amatomaa torpedo condemor.</div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+          
+          
+         $(".contenedor > div div:nth-child(2)").hide();
+          
+         $(".contenedor > div div").eq(1).show();
+          
+         $(".contenedor > div div").click(function() {
+             $(".contenedor > div div:nth-child(2)").hide();
+             $(this).next().show();
+             }); 
+          
+          
+          
+
+
+
+	  });
+	</script>
+
+</body>
+</html>

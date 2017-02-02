@@ -1,0 +1,84 @@
+<!--
+    Author: Juan Diego Pérez @pekechis
+    E-mail: contact@jdperez.es
+    Description: Template for jQuery Exercises
+    Date: December 2016
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	
+	<table border="1">
+        <tr>
+            <th>DNI</th>
+            <th>Rosa</th>
+            <th>Dirección</th>
+        </tr>
+        <tr>
+            <td>777777x</td>
+            <td>Rosa</td>
+            <td>calle Pamplona</td>
+        </tr>
+        <tr>
+            <td>7777772x</td>
+            <td>Manuel</td>
+            <td>calle Jerez</td>
+        </tr>
+        <tr>
+            <td>777777x</td>
+            <td>Pedro</td>
+            <td>calle Cadiz</td>
+        </tr>
+        <tr>
+            <td>777777x</td>
+            <td>Juan</td>
+            <td>calle de la salud</td>
+        </tr>
+        <tr>
+            <td>777777x</td>
+            <td>Pablo</td>
+            <td>calle iglesias</td>
+        </tr>
+    </table>
+    
+    <br/><br/>
+    
+    <input type="text" name="valor">
+    <input type="submit" value="Buscar" name="valor">
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+
+          $("input[value='Buscar']").click(function() {
+              
+              $("tbody tr td:first-child").each(function() {
+                  
+              
+              
+              var valor= $("input[type='text']").val();
+              
+              if ($(this).text()==valor) {
+                 $(this).parent().addClass("encontrado");
+                  
+              } else {
+                  console.log(valor+ " no encontrado");
+              }
+              
+           });   
+          });
+
+	  });
+	</script>
+
+</body>
+</html>
