@@ -1,0 +1,56 @@
+.contenedor {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+.principal {
+    height: 20px;
+    width: 100px;
+    float:left;
+}
+
+
+#padre {
+    display: absolute;
+}
+
+#padre1 {
+    display: absolute;
+    width: 300px;
+}
+
+
+.secundario {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    border: 1px solid red;
+    float: left;
+    display: block;
+    left:20px;
+    top:0px;
+}
+
+.secundario1 {
+    position: relative;
+    height: 30px;
+    width: 60px;
+    border: 1px solid red;
+    float: left;
+    display: inline;
+    left:102px;
+    top:-37px;   
+}
+
+#position {
+    
+}
+
+#borde {
+    height: 30px;
+    width: 80px;
+    border: 2px solid green;
+    text-align: center;
+}

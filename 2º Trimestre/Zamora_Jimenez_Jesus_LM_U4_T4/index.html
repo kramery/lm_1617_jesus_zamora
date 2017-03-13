@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+    <div class="contenedor">
+        <nav>
+            <div class="principal"><div id="borde">1</div>
+                <nav id="padre">
+                    <div class="secundario">1</div>
+                    <div class="secundario">2</div>
+                    <div class="secundario">3</div>
+                    <div class="secundario" id="entrada">4
+                        <nav id="padre1"><br/>
+                            <div class="secundario1">5</div>
+                            <div class="secundario1">6</div>
+                            <div class="secundario1">7</div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <div class="principal"><div id="borde">2</div>
+                <nav id="padre">
+                    <div class="secundario">1</div>
+                    <div class="secundario">2</div>
+                    <div class="secundario">3</div>
+                    <div class="secundario" id="entrada">4
+                        <nav id="padre1"><br/>
+                            <div class="secundario1">5</div>
+                            <div class="secundario1">6</div>
+                            <div class="secundario1">7</div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <div class="principal"><div id="borde">3</div></div>
+            <div class="principal"><div id="borde">4</div></div>
+        </nav>
+    </div>
+    
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+          
+          $(".secundario").hide();
+          $(".secundario1").hide();
+          
+          $(".principal").mouseenter(function() {
+            $(this).children("nav").children(".secundario").show();
+              
+            $("#entrada").mouseenter(function() {
+            $(this).children("nav").children(".secundario1").show();
+                
+          });    
+          });
+          
+          
+          
+
+          $(".principal").mouseleave(function() {
+            $(".secundario").hide();
+          });
+          
+          
+          $("#entrada").mouseleave(function() {
+            $(".secundario1").hide();
+          });
+          
+	  });
+        
+	</script>
+
+</body>
+</html>

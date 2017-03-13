@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	
+	
+    <div class="contenedor">
+        
+        <div class="derecha">
+            <img src="img/derecha.png"/>
+        </div>
+        <div class="izquierda">
+            <img src="img/izquierda.png"/>
+        </div>
+        
+        <div id="fotos">
+            <div class="centro current">
+                <img src="img/1.png"/>
+            </div>
+            <div class="centro">
+                <img src="img/2.png"/>
+            </div>
+            <div class="centro">
+                <img src="img/3.png"/>
+            </div>
+            <div class="centro">
+                <img src="img/4.png"/>
+            </div>
+        </div>
+        
+    
+    </div>
+
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+          
+          $(".centro").css({opacity:"0"});
+            
+          $(".current").css({opacity:"1"});
+          
+          
+          $(".derecha").click(function() {
+              
+              if($(".current").next().length!=0) {
+                  
+                  $(".current").removeClass("current").animate({
+                    opacity: "0"}).next().addClass("current").animate({
+                    opacity: "1"});  
+              }
+              }); 
+          
+          $(".izquierda").click(function() {
+              
+              if($(".current").prev().length!=0) {
+                  
+                  $(".current").removeClass("current").animate({
+                    opacity: "0"}).prev().addClass("current").animate({
+                    opacity: "1"});  
+              }
+              });
+          
+          
+          
+          
+          
+          }); 
+
+  
+	</script>
+
+</body>
+</html>
