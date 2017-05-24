@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="contenedor">
+        
+        <div class="cuadrado" id="cuadrado" ></div>
+    
+    </div>
+    
+    <div id="puntos"></div>
+    
+    
+    <script>
+    
+        function actualizar () {
+           
+           var derecha= Math.floor(Math.random() * 780);
+           var arriba= Math.floor(Math.random() * 380);
+            
+        $("#cuadrado").css({"left":derecha});
+        $("#cuadrado").css({"top":arriba});
+          
+        }
+        
+        
+        $(function(){
+            
+            var contador = 0;
+            
+            setInterval(actualizar,1000);
+            
+            console.log();
+            
+            $(".cuadrado").click(function() {
+                
+                  contador+= 1;
+
+            $("#puntos").html(contador+ " puntos");
+            });
+           
+        });
+        
+            
+        
+            
+            
+        
+            
+        
+    
+    
+    
+    </script>
+
+    
+    </body>
+    
+</html>

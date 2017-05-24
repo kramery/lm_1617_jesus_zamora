@@ -1,0 +1,76 @@
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+    
+   <input type="text" id="valor">
+   <input type="button" id="add" value="Add">
+   <input type="button" id="mostrar" value="Mostrar array">
+    <input type="button" id="borrar" value="Borrar array">
+
+  
+   <div id="lista">
+   </div>
+
+
+<script>
+    
+    $(function() {
+   
+    var $vector=[];
+   
+    $("#add").click(function() {
+    
+        var valor = $("#valor").val();
+         $vector.push(valor);
+         console.log($vector);
+        
+       
+        
+    });
+        
+    console.log($vector);
+        
+    $("#mostrar").click(function() {
+        
+        $("#lista").html("");
+        
+        $("#lista").append("<ul>");
+        for ($i=0;$i<$vector.length;$i++) {
+            $("#lista").append("<li>"+$vector[$i]+"</li>");
+        }
+        
+        $("#lista").append("</ul>");
+        
+         $longitud = $vector.length; 
+    
+        $("#lista").append($longitud);
+
+    });
+        
+        
+    $("#borrar").click(function() {
+        
+        $vector.pop();
+        
+    });
+        
+        
+        
+        
+        
+        $(function() {
+         
+        });
+        
+    
+    
+    
+    });
+</script>
+</body>
+</html>

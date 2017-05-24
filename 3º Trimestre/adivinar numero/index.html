@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    
+    <div class="contenedor">
+        <div class="cajon">
+            <p id="mensaje"></p>
+            <p id="intentos"></p>
+        </div>    
+    </div>
+    
+    
+    <script>
+        
+       
+        
+        // Calculo el numero aleatorio
+        var valor = Math.floor(Math.random() * 100);
+            
+        console.log(valor);
+        
+        // Inicialmente establezco en false el numero encontrado
+        var encontrado = false;
+        
+        
+        var numerointentos = 0;
+        var numerointentosmax = 8;
+        
+        
+        // Creo la condicion while, mientras que el numero introducido sea menor, mostrará ese mensaje
+        
+        
+            while ( numerointentos < numerointentosmax && encontrado == false) {
+                
+                 // pido por pantalla el numero y lo guardo en una variable
+                    var numero = parseInt(prompt(""));
+
+                    console.log(numero);
+
+                if (numero < valor) {
+                    
+                    $("#mensaje").html("");
+                    
+                    $("#mensaje").html("El valor introducido es menor que el numero calculado");
+                    
+                    alert("El valor introducido es menor que el numero calculado");
+                    
+                } else if (numero > valor) {
+                    
+                    $("#mensaje").html("");
+                    
+                    $("#mensaje").html("El valor introducido es mayor que el numero calculado");
+                    
+                    alert("El valor introducido es mayor que el numero calculado");
+                    
+                } else {
+                    
+                    $("#mensaje").html("");
+                    
+                    $("#mensaje").html("El valor introducido es igual que el numero calculado");
+                    
+                    alert("El valor introducido es igual que el numero calculado");
+                    
+                    var encontrado = true;
+                    
+                    alert("¡Lo has encontrado! El número era " + valor);
+                    
+                     
+                    
+                }
+                
+                numerointentos++;
+                
+                $("#intentos").html();
+                
+                $("#intentos").html("Este es el intento número " + numerointentos + " de "+ numerointentosmax);
+                
+            }
+        
+            // Una vez haya superado el numero de intentos o haya encontrado el número
+            // el documento se reiniciará dando paso a un nuevo juego con otro numero
+            // aleatorio
+        
+            location.reload();
+          
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    
+    <input type="number" id="boton1"/><br/><br/>
+    <input type="number" id="boton2"/><br/><br/>
+    <input type="submit" value="comprobar">
+    
+    
+    
+    <script type="text/javascript">
+ 
+
+        
+        $("input[type='submit']").click(function(event) {
+            
+                  
+    var valor1 = $("#boton1").val();
+    var valor2 = $("#boton2").val();
+            
+            if (valor1>valor2) {
+                
+                alert("valor 1 es mayor que valor 2");
+                
+            } else if (valor1<valor2) {
+                
+                alert("valor 2 es mayor que valor 1");
+                
+            } else {
+                
+                alert("son iguales");
+            }
+            
+            console.log(valor1);
+            console.log(valor2);
+            
+        });
+    
+    
+        
+    </script>
+</body>
+</html>
